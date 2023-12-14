@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adike Shoes - Apply</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Adike Shoes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="benefits.html">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html">Apply</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Apply Page -->
+    <div class="container">
+      <h2>Apply for a Job</h2>
+      <form action="submit.php" method="post" enctype="multipart/form-data">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <!-- Which Job -->
+        <div class="form-group">
+          <label for="jobTitle">Job Title Applying For</label>
+          <select class="form-control" id="jobTitle" name="jobTitle" required>
+            <option value="Marketing Manager">Marketing Manager</option>
+            <option value="Senior Shoe Designer">Senior Shoe Designer</option>
+            <option value="Customer Service Representative">
+              Customer Service Representative
+            </option>
+            <option value="Customer Service Representative">
+              Software Engineer
+            </option>
+          </select>
+        </div>
+
+        <!-- Resume -->
+        <div class="form-group">
+          <label for="resume">Upload Resume</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+          />
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="btn btn-primary">
+          Submit Application
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><b>Contact Information</b></h5>
+            <p>123 Adike Street, Shoe City</p>
+            <p>Email: info@adikeshoes.com</p>
+            <p>Phone: +1 123-456-7890</p>
+          </div>
+          <div class="col-md-6">
+            <h5><b>Quick Links</b></h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">&copy; 2023 Adike Shoes. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

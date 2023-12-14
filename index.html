@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adike Shoes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Adike Shoes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="benefits.html">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html">Apply</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Welcome to Adike Shoes</h1>
+            <p>
+              Adike Shoes is more than just a footwear company; it's a story of
+              passion, craftsmanship, and creativity.
+            </p>
+            <p>
+              Our commitment to quality craftsmanship has been unwavering since
+              our inception. Each pair of shoes is meticulously designed,
+              crafted with precision, and inspired by the latest fashion trends.
+            </p>
+            <p>
+              Explore our diverse range of collections designed for every
+              occasion, from casual wear to professional elegance.
+            </p>
+            <p>Join us on a journey where your talent meets passion!</p>
+            <a href="jobs.html" class="btn btn-primary">View Job Openings</a>
+          </div>
+          <div class="col-lg-4">
+            <img src="shoes.jpg" alt="Adike Shoes" class="img-fluid" />
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>About Us</h2>
+        <p>
+          Founded in 2005, Adike Shoes has established itself as a leading name
+          in the footwear industry. Our team of dedicated designers, craftsmen,
+          and marketers work collaboratively to deliver innovative and stylish
+          footwear.
+        </p>
+        <p>
+          We believe in fostering a culture that celebrates creativity,
+          diversity, and excellence. Our commitment extends beyond crafting
+          exceptional shoes; we strive to create a workplace where every
+          individual's talents are nurtured.
+        </p>
+        <p>Join us in our journey to redefine fashion through footwear!</p>
+      </div>
+
+      <!-- Swiper -->
+      <hr width="55%" />
+      <div class="main-slider">
+        <h2 class="slider-title">Our Employees</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="employee1.jpg" alt="Employee 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="employee2.jpg" alt="Employee 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="employee3.jpg" alt="Employee 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="employee4.jpg" alt="Employee 4" />
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><b>Contact Information</b></h5>
+            <p>123 Adike Street, Shoe City</p>
+            <p>Email: info@adikeshoes.com</p>
+            <p>Phone: +1 123-456-7890</p>
+          </div>
+          <div class="col-md-6">
+            <h5><b>Quick Links</b></h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">&copy; 2023 Adike Shoes. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Swiper Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

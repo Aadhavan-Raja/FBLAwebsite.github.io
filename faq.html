@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adike Shoes - FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Adike Shoes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="benefits.html">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html">Apply</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- FAQ Content -->
+    <section class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>How do I apply for a job at Adike Shoes?</h3>
+        <div class="faq-answer">
+          <p>
+            To apply for a job, visit our Jobs page, select the desired
+            position, and complete the online application form. Ensure to submit
+            all required documents and information for consideration.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>What is the application process timeline?</h3>
+        <div class="faq-answer">
+          <p>
+            After submitting your application, our HR team reviews each
+            application carefully. Shortlisted candidates will be contacted for
+            further interviews or assessments within 2-3 weeks.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>What should I expect during the interview process?</h3>
+        <div class="faq-answer">
+          <p>
+            Our interview process typically includes initial screenings,
+            interviews (virtual or in-person), and, in some cases, skills
+            assessments or tasks related to the position.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>How can I follow up on my job application status?</h3>
+        <div class="faq-answer">
+          <p>
+            You can inquire about your application status by contacting our HR
+            department via email at careers@adikeshoes.com or by phone at +1
+            123-456-7890.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>What benefits does Adike Shoes offer to employees?</h3>
+        <div class="faq-answer">
+          <p>
+            We provide competitive salaries, healthcare coverage, opportunities
+            for career growth, flexible work schedules, employee discounts, and
+            other perks. Check our Benefits page for details.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <h3>
+          What sets Adike Shoes apart as an employer in the shoe industry?
+        </h3>
+        <div class="faq-answer">
+          <p>
+            Our commitment to employee well-being, a supportive work
+            environment, opportunities for innovation, and a passion for
+            creating quality footwear sets us apart in the industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><b>Contact Information</b></h5>
+            <p>123 Adike Street, Shoe City</p>
+            <p>Email: info@adikeshoes.com</p>
+            <p>Phone: +1 123-456-7890</p>
+          </div>
+          <div class="col-md-6">
+            <h5><b>Quick Links</b></h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">&copy; 2023 Adike Shoes. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Drop down Menu Script-->
+    <script>
+      function toggleFAQ(faqItem) {
+        faqItem.classList.toggle("active");
+        var content = faqItem.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
